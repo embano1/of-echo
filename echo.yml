@@ -1,0 +1,14 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  of-echo:
+    lang: python
+    handler: ./echo
+    image: embano1/of-echo:latest
+    environment:
+      write_debug: true
+      read_debuge: true
+    annotations:
+      topic: "vm.powered.on,vm.powered.off,vm.stopping"
