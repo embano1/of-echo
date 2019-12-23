@@ -9,6 +9,6 @@ functions:
     image: embano1/of-echo:latest
     environment:
       write_debug: true
-      read_debuge: true
+      read_debug: true
     annotations:
       topic: "vm.powered.on,vm.powered.off,vm.stopping"
