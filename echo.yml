@@ -11,4 +11,4 @@ functions:
       write_debug: true
       read_debug: true
     annotations:
-      topic: "vm.powered.on,vm.powered.off,vm.stopping"
+      topic: "VmPoweredOnEvent,VmPoweredOffEvent"
