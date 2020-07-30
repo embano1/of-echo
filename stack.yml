@@ -4,11 +4,11 @@ provider:
   gateway: http://127.0.0.1:8080
 functions:
   of-echo:
-    lang: python
+    lang: python3-http
     handler: ./echo
     image: embano1/of-echo:latest
     environment:
       write_debug: true
       read_debug: true
     annotations:
-      topic: "VmPoweredOnEvent,VmPoweredOffEvent"
+      topic: "DrsVmPoweredOnEvent,VmPoweredOnEvent,VmPoweredOffEvent"
